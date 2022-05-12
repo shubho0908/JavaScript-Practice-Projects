@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color Changer</title>
+  </head>
+  <style>
+    .container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      flex-flow: column wrap;
+      align-items: center;
+    }
+
+    a {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      margin: 10px;
+      position: relative;
+      cursor: pointer;
+      top: 50px;
+    }
+
+    #first {
+      background-color: red;
+      padding: 50px;
+    }
+    #second {
+      background-color: blue;
+      padding: 50px;
+    }
+    #third {
+      background-color: rgb(255, 109, 36);
+      padding: 50px;
+    }
+    #fourth {
+      background-color: pink;
+      padding: 50px;
+    }
+    #fifth {
+      background-color: yellow;
+      padding: 50px;
+    }
+    #sixth {
+      background-color: rgb(38, 38, 38);
+      padding: 50px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1 id="head">Background Color Changer</h1>
+      <div class="colors">
+        <a id="first"></a>
+        <a id="second"></a>
+        <a id="third"></a>
+        <a id="fourth"></a>
+        <a id="fifth"></a>
+        <a id="sixth"></a>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
