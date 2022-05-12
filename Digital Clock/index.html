@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      background-color: black;
+    }
+    p {
+      font-family: "Roboto Mono", monospace;
+      font-size: 55px;
+      color: #fff;
+      text-shadow: 0 0 7px #fff, 0 0 10px rgba(255, 255, 255, 0.477),
+        0 0 21px #fff, 0 0 42px rgba(0, 255, 170, 0.484),
+        0 0 82px rgba(0, 255, 170, 0.348), 0 0 92px rgba(0, 255, 170, 0.462),
+        0 0 102px #0fa, 0 0 151px rgba(0, 255, 170, 0.469);
+    }
+    .main {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <p id="clock"></p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
