@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form Validator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      href="https://hotemoji.com/images/dl/7/memo-emoji-by-google.png"
+      type="image/x-icon"
+    />
+  </head>
+  <style>
+    .data {
+      margin-top: 50px;
+      padding: 40px;
+      border-radius: 18px;
+      background: linear-gradient(145deg, #e6e6e6, #ffffff);
+      box-shadow: 20px 20px 29px #ebebeb, -20px -20px 29px #ffffff;
+    }
+  </style>
+  <body>
+    <div id="alert"></div>
+    <div class="container">
+      <div class="data">
+        <h1>Form Validation</h1>
+        <form>
+          <div class="form-group my-4">
+            <label for="name">Username*</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your username"
+            />
+            <small id="namevalid" class="form-text text-muted invalid-feedback">
+              Your username must be 2-10 characters long and should not start
+              with a number
+            </small>
+          </div>
+
+          <div class="form-group my-4">
+            <label for="email">Email address*</label>
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <small
+              id="emailvalid"
+              class="form-text text-muted invalid-feedback"
+            >
+              Your email must be a valid email
+            </small>
+          </div>
+          <div class="form-group my-4">
+            <label for="car">Your Job Role</label>
+            <select class="form-control" id="car">
+              <option>Business Man</option>
+              <option>Freelancer</option>
+              <option>Student</option>
+              <option>Employee</option>
+              <option>Unemployed</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="address">Enter your address</label>
+            <textarea
+              class="form-control"
+              name="address"
+              id="address"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="form-group my-4">
+            <label for="address">Enter your phone number*</label>
+            <input class="form-control" name="phone" id="phone" rows="3" />
+            <small
+              id="phonevalid"
+              class="form-text text-muted invalid-feedback"
+            >
+              Your phone number must be 10 digit long
+            </small>
+          </div>
+          <div class="form-group my-4">
+            <label for="exampleFormControlTextarea1"
+              >Any other message...</label
+            >
+            <textarea class="form-control" id="mssg" rows="3"></textarea>
+          </div>
+          <button id="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
