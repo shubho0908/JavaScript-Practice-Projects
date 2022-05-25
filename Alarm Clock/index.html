@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alarm Clock</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      href="https://emojipedia-us.s3.amazonaws.com/source/skype/289/alarm-clock_23f0.png"
+      type="image/x-icon"
+    />
+  </head>
+  <style>
+    #time2 {
+      font-family: "Orbitron", sans-serif;
+    }
+    .container {
+      padding: 50px;
+      border-radius: 15px;
+      background: #e0e0e0ad;
+      box-shadow: 20px 20px 60px #bebebe51, -20px -20px 60px #ffffff;
+    }
+  </style>
+  <body>
+    <div class="container my-5">
+      <h1>Alarm Clock</h1>
+      <div class="live-time">
+        <h3 class="my-5" id="time2"></h3>
+      </div>
+      <div class="alarm">
+        <div class="input-group my-5">
+          <input
+            type="text"
+            id="time"
+            class="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+            placeholder="Enter - yyyy-mm-dd hh:mm:ss"
+          />
+          <div id="datevalid" class="invalid-feedback">
+            Wrong input! Correct format: [yyyy-mm-dd hh:mm:ss]
+          </div>
+        </div>
+
+        <button class="btn btn-primary" id="set" type="submit">
+          Set Alarm
+        </button>
+
+        <button class="btn btn-primary" id="stop" type="submit">
+          Stop Alarm
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

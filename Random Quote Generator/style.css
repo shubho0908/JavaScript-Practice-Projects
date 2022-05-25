@@ -1,0 +1,25 @@
+button {
+  display: block;
+  margin: auto;
+  width: 13%;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#data {
+  font-size: 20px;
+}

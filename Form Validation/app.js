@@ -10,42 +10,43 @@ let mailValid = "";
 let phoneValid = "";
 
 username.addEventListener("blur", () => {
-  let user = /^[a-zA-Z]([0-9a-zA-Z]){2,10}$/;
+  let regex = /^[a-zA-Z][a-zA-Z0-9]{2,10}$/;
   let str = username.value;
-  if (user.test(str)) {
-    console.log("Your username is valid");
+  if (regex.test(str)) {
     username.classList.remove("is-invalid");
+    console.log("Your username is valid");
     userValid = true;
   } else {
-    console.log("Your username is invalid");
     username.classList.add("is-invalid");
+    console.log("Your username is invalid");
     userValid = false;
   }
 });
 
 email.addEventListener("blur", () => {
-  let mail = /^([a-z\_\-\.A-Z0-9]+)@([a-zA-z]+)\.([a-zA-Z]){2,6}$/;
+  let regex = /^([a-zA-Z0-9\.\_\-]+)@([a-zA-Z]+)\.([a-zA-Z]+){2,6}$/;
   let str = email.value;
-  if (mail.test(str)) {
-    console.log("Your email is valid");
+  if (regex.test(str)) {
     email.classList.remove("is-invalid");
+    console.log("Your email is valid");
     mailValid = true;
   } else {
     email.classList.add("is-invalid");
+    console.log("Your email is invalid");
     mailValid = false;
   }
 });
 
 phone.addEventListener("blur", () => {
-  let mobile = /^([0-9]){10}$/;
+  let regex = /^[0-9]{10}$/;
   let str = phone.value;
-  if (mobile.test(str)) {
-    console.log("Your phone is valid");
+  if (regex.test(str)) {
     phone.classList.remove("is-invalid");
+    console.log("Your phone is valid");
     phoneValid = true;
   } else {
-    console.log("Your phone is invalid");
     phone.classList.add("is-invalid");
+    console.log("Your phone is invalid");
     phoneValid = false;
   }
 });
