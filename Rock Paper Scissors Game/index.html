@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rock Paper Scissors Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="light" type="button" class="btn btn-dark" hidden>Light</button>
+    <button id="dark" type="button" class="btn btn-light">Dark</button>
+    <div class="container">
+      <h1 id="title"><u>Rock-Paper-Scissors</u></h1>
+
+      <div class="scoreboard">
+        <div class="player-score">
+          <h2>Player Score 🤓</h2>
+          <h2 id="score-1"></h2>
+        </div>
+        <div class="computer-score">
+          <h2>Computer Score 💻</h2>
+          <h2 id="score-2"></h2>
+        </div>
+      </div>
+      <div id="choose-game">
+        <h2 id="title2">Choose Your Move</h2>
+        <h4>Moves Left</h4>
+        <h4 id="moves-left"></h4>
+        <div class="buttons-group">
+          <button id="rock" type="button" class="btn btn-success">Rock</button>
+          <button id="paper" type="button" class="btn btn-success">
+            Paper
+          </button>
+          <button id="scissors" type="button" class="btn btn-success">
+            Scissors
+          </button>
+        </div>
+      </div>
+      <div class="result my-5">
+        <h2 id="result"></h2>
+      </div>
+      <div id="final-result">
+        <button id="restart" type="button" class="btn btn-success" hidden>
+          Restart
+        </button>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
