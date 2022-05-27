@@ -38,8 +38,6 @@ rock.addEventListener("click", () => {
   } else if (rand2 >= 7 && rand2 <= 9) {
     c_option = "scissors";
   }
-  console.log(rand2);
-  console.log(c_option);
   if (c_option == "rock") {
     result.innerHTML = `It's a Tie!`;
   } else if (c_option == "paper") {
@@ -83,8 +81,6 @@ paper.addEventListener("click", () => {
   } else if (rand2 >= 7 && rand2 <= 9) {
     c_option = "scissors";
   }
-  console.log(rand2);
-  console.log(c_option);
   if (c_option == "rock") {
     score1 += 1;
     player_score.innerHTML = score1;
@@ -131,8 +127,6 @@ scissors.addEventListener("click", () => {
   } else if (rand2 >= 7 && rand2 <= 9) {
     c_option = "scissors";
   }
-  console.log(rand2);
-  console.log(c_option);
   if (c_option == "rock") {
     score2 += 1;
     computer_score.innerHTML = score2;

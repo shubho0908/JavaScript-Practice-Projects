@@ -59,7 +59,6 @@ submit.addEventListener("click", function get() {
     }
     document.getElementById("submit").disabled = true;
   }
-  console.log(rand2);
 });
 
 start.addEventListener("click", () => {
