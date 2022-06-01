@@ -1,0 +1,78 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  height: 150px;
+  border: 2px solid black;
+}
+
+.box:hover {
+  cursor: pointer;
+  transition: all 0.2s;
+  /* background-color: rgba(244, 216, 179, 0.464); */
+  background-color: rgba(215, 215, 215, 0.464);
+}
+
+#turn {
+  font-weight: bold;
+  font-size: 50px;
+  font-family: "Baloo 2", cursive;
+  margin-bottom: 50px;
+}
+
+button {
+  font-family: "Baloo 2", cursive;
+  background-color: white;
+}
+
+.game-body {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+}
+
+.game {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#restart {
+  font-family: "Baloo 2", cursive;
+  font-size: 20px;
+}
+
+.br {
+  border-right: none;
+}
+
+.bl {
+  border-left: none;
+}
+
+.bt {
+  border-top: none;
+}
+
+.bb {
+  border-bottom: none;
+}
+
+@media (min-width: 250px) and (max-width: 520px) {
+  .game-body {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+  }
+  .box {
+    height: 80px;
+    font-size: 50px;
+  }
+  #turn {
+    font-size: 25px;
+  }
+}
