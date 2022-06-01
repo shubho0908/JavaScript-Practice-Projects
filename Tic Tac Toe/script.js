@@ -221,7 +221,7 @@ box.forEach((element, index) => {
       box[7].innerText != "" &&
       box[8].innerText != ""
     ) {
-      document.getElementById("turn").innerHTML = `"Nobody Won! It's a Draw 😅`;
+      document.getElementById("turn").innerHTML = `Nobody Won! It's a Draw 😅`;
       draw.play();
       document.getElementById("restart").hidden = false;
     }
